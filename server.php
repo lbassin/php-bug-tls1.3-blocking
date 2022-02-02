@@ -30,6 +30,9 @@ if ($client === false) {
 
 sleep(5); // Wait 5 seconds before doing anything so tls can do whatever it wants
 
+var_dump("Sending data");
+sleep(1); // Just to have the log in the right order as everything is happening really fast
+
 fwrite($client, 'something'); // Send data to the client
 
 var_dump("Data sent");
