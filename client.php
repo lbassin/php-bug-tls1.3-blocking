@@ -12,7 +12,7 @@ $context = stream_context_create([
 ]);
 
 $stream = stream_socket_client(
-    "tlsv1.2://server:1234",
+    "tlsv1.3://server:1234",
     $errno,
     $errstr,
     30,

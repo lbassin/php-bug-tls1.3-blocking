@@ -9,7 +9,7 @@ $context = stream_context_create([
 ]);
 
 $server = stream_socket_server(
-    "tlsv1.2://0.0.0.0:1234",
+    "tlsv1.3://0.0.0.0:1234",
     $errno,
     $errstr,
     STREAM_SERVER_BIND | STREAM_SERVER_LISTEN,
